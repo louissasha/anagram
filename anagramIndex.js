@@ -44,20 +44,14 @@ export const anagramByIndex = (string1 = "", string2 = "") => {
     // the shared matrix values should all be 0 so you valide that the sum is 0
   }
 
-  let total = 0;
-  console.dir(sharedMatrix);
+  let count = 0;
 
-  sharedMatrix.forEach((val) => {
-    total += val;
-  });
+  for (let val of sharedMatrix.values()) {
+    count++;
+    console.log(`The is the count: ${count}`);
+    console.log(val);
+    if (val !== 0) return false;
+  }
 
-  console.log(total);
-
-  if (total === 0) return true;
-
-  return false;
-  //console.log(matrixStr1);
-  //console.log(sharedMatrix);
+  return true;
 };
-
-//console.log(anagramByIndex("dfeabc", "abcdef"));

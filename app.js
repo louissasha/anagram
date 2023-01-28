@@ -64,6 +64,4 @@ const anagram = (str1 = "", str2 = "") => {
   return true;
 };
 
-//console.log(anagram("cah", "cashew"));
-
-console.log(anagramByIndex("cahews", "cashew"));
+console.log(anagramByIndex("cashew", "casher"));
