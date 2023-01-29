@@ -64,4 +64,9 @@ const anagram = (str1 = "", str2 = "") => {
   return true;
 };
 
-console.log(anagramByIndex("cashew", "casher"));
+console.log(anagramByIndex("cashew", "cehsac"));
+/**
+ * git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+ * 
+ */
